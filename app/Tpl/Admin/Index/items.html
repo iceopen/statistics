@@ -1,0 +1,15 @@
+<include file="Public:header" />
+<table class="table table-striped">
+	<foreach item="item" name="items">
+	<tr>
+		<td>{$item.session_id}</td>
+		<td>{$item.agent}</td>
+	</tr>
+	<tr>
+		<td>{$item.create_time|date='Y:m:d H:i:s',###}</td>
+		<td>{$item.url}</td>
+	</tr>
+	</foreach>
+</table>
+<div>{$page}</div>
+<include file="Public:footer" />
