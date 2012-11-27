@@ -1,5 +1,6 @@
 <?php
 //路由规则配置
 return array(
-    'ga' => 'Home/Index/index',
+    'ga' => 'Home/Index/getInfo',
+	'ip/info' => 'Home/Index/ipinfo',
 );
